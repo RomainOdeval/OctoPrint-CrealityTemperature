@@ -13,4 +13,7 @@ Tested on :
 
 ## Setup
 
-Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html).
+Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bundledplugins/pluginmanager.html)
+or manually using this URL:
+
+    https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/releases/latest/download/master.zip
