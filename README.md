@@ -1,4 +1,4 @@
-# OctoPrint-AutoLogout
+# OctoPrint-CrealityTemperature
 
 [![Version](https://img.shields.io/badge/dynamic/json.svg?color=brightgreen&label=version&url=https://api.github.com/repos/RomainOdeval/OctoPrint-CrealityTemperature/releases&query=$[0].name)]()
 [![Released](https://img.shields.io/badge/dynamic/json.svg?color=brightgreen&label=released&url=https://api.github.com/repos/RomainOdeval/OctoPrint-CrealityTemperature/releases&query=$[0].published_at)]()
