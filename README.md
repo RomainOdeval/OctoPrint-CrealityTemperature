@@ -5,7 +5,7 @@
 ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/RomainOdeval/OctoPrint-CrealityTemperature/latest/total.svg)
 
 Fix to parse correctly temperatures from Creality printers.
-Originally created by Jean-Christophe Heger on https://community.octoprint.org/t/temperature-info-not-parsed-correctly/3557/11
+Originally created by Jean-Christophe Heger on https://community.octoprint.org/t/temperature-info-not-parsed-correctly/3557/12
 
 Tested on :
 * CR-10S Pro
