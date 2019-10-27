@@ -17,3 +17,5 @@ Install via the bundled [Plugin Manager](http://docs.octoprint.org/en/master/bun
 or manually using this URL:
 
     https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/releases/latest/download/master.zip
+
+Remember to restart OctoPrint / OctoPi after installing this plugin to  make it work.
