@@ -4,14 +4,14 @@ import octoprint.plugin
 import re
 
 class CrealityTemperaturePlugin(octoprint.plugin.OctoPrintPlugin):
+	
 	def log(self, comm_instance, line, *args, **kwargs):
 		if re.match("^(ok)?\s*==T", line):
 			fix = re.sub("==", "", line)
 			return fix
 		return line
-
+	
 	##~~ Softwareupdate hook
-
 	def get_update_information(self):
 		return dict(
 			CrealityTemperature=dict(
@@ -29,8 +29,8 @@ class CrealityTemperaturePlugin(octoprint.plugin.OctoPrintPlugin):
 			)
 		)
 
-	
-__plugin_name__ = "Creality Temperature Fix"
+__plugin_name__ = "Creality Temperature"
+
 def __plugin_load__():
 	global __plugin_implementation__
 	__plugin_implementation__ = CrealityTemperaturePlugin()
