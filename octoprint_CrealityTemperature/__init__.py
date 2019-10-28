@@ -10,6 +10,26 @@ class CrealityTemperaturePlugin(octoprint.plugin.OctoPrintPlugin):
 			return fix
 		return line
 
+	##~~ Softwareupdate hook
+
+	def get_update_information(self):
+		return dict(
+			CrealityTemperature=dict(
+				displayName=self._plugin_name,
+				displayVersion=self._plugin_version,
+
+				# version check: github repository
+				type="github_release",
+				user="RomainOdeval",
+				repo="OctoPrint-CrealityTemperature",
+				current=self._plugin_version,
+
+				# update method: pip
+				pip="https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/archive/{target_version}.zip"
+			)
+		)
+
+	
 __plugin_name__ = "Creality Temperature Fix"
 def __plugin_load__():
 	global __plugin_implementation__
@@ -17,5 +37,6 @@ def __plugin_load__():
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {
-		"octoprint.comm.protocol.gcode.received": __plugin_implementation__.log
+		"octoprint.comm.protocol.gcode.received": __plugin_implementation__.log,
+		"octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
 	}
