@@ -4,7 +4,7 @@
 [![Released](https://img.shields.io/badge/dynamic/json.svg?color=brightgreen&label=released&url=https://api.github.com/repos/RomainOdeval/OctoPrint-CrealityTemperature/releases&query=$[0].published_at)]()
 ![GitHub Releases (by Release)](https://img.shields.io/github/downloads/RomainOdeval/OctoPrint-CrealityTemperature/latest/total.svg)
 
-Fix to parse correctly temperatures from Creality printers.
+Fix to parse correctly temperatures from Creality printers, due to an issue known as "Errant double equals characters".
 Originally created by Jean-Christophe Heger on https://community.octoprint.org/t/temperature-info-not-parsed-correctly/3557/12
 
 Tested on :
@@ -19,3 +19,8 @@ or manually using this URL:
     https://github.com/RomainOdeval/OctoPrint-CrealityTemperature/releases/latest/download/master.zip
 
 Remember to restart OctoPrint / OctoPi after installing this plugin to  make it work.
+
+## Common issues
+
+If this plugin do nothing, maybe you have another common issue known as "Doubled temperature entries".
+To fix it, use https://plugins.octoprint.org/plugins/ender3v2tempfix/
